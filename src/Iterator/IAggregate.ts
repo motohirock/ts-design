@@ -1,0 +1,3 @@
+interface IAggregate {
+    getIterator: IIterator
+}

@@ -1,4 +1,4 @@
 interface IIterator {
-    hasNext: boolean;
+    hasNext(): boolean;
     next(): Object;
 }
