@@ -1,4 +1,7 @@
-class BookShelf implements IAggregate {
+import { Book } from './Book';
+import { BookShelfIterator } from './BookShelfIterator'
+
+export class BookShelf implements IAggregate {
 
     private books: Book[] = [];
 
