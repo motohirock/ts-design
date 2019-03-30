@@ -1,17 +1,17 @@
 class BookShelf implements IAggregate {
 
-    private list: Book[] = [];
+    private books: Book[] = [];
 
-    length(): number {
-        return this.list.length;
+    get length(): number {
+        return this.books.length;
     }
 
     appendBook(book: Book) {
-        this.list.push(book);
+        this.books.push(book);
     }
 
     getBook(index: number) {
-        return this.list[index];
+        return this.books[index];
     }
 
     getIterator() {

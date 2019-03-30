@@ -7,7 +7,7 @@ class BookShelfIterator implements IIterator {
     }
 
     hasNext(): boolean {
-        return this.index < 3;
+        return this.index < this.bookShelf.length;
     }
     next(): Book {
         const book = this.bookShelf.getBook(this.index);
