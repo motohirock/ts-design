@@ -1,8 +1,17 @@
 class BookShelfIterator implements IIterator {
-    hasNext() {
-        return false;
+    private bookShelf: BookShelf;
+    private index: number = 0;
+
+    constructor(bookShelf: BookShelf) {
+        this.bookShelf = bookShelf;
     }
-    next() {
-        return new Object;
+
+    hasNext(): boolean {
+        return this.index < 3;
+    }
+    next(): Book {
+        const book = this.bookShelf.getBook(this.index);
+        this.index++;
+        return book;
     }
 }
