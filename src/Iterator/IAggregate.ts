@@ -1,3 +1,3 @@
 interface IAggregate {
-    getIterator: IIterator
+    getIterator(): IIterator;
 }
