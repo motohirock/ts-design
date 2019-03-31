@@ -11,5 +11,6 @@ bookShelf.appendBook(new Book("ぐりとぐら"));
 var it: BookShelfIterator = bookShelf.getIterator();
 
 while (it.hasNext()) {
-    console.log(it.next());
+    var book: Book = it.next()
+    console.log(book.getName());
 }
