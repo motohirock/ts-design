@@ -8,9 +8,9 @@ bookShelf.appendBook(new Book("人間失格"));
 bookShelf.appendBook(new Book("君の名は"));
 bookShelf.appendBook(new Book("ぐりとぐら"));
 
-var it: BookShelfIterator = bookShelf.getIterator();
+var it: IIterator = bookShelf.getIterator();
 
 while (it.hasNext()) {
-    var book: Book = it.next()
+    var book: Book = it.next() as Book;
     console.log(book.getName());
 }
