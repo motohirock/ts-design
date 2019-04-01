@@ -1,4 +1,4 @@
-interface IIterator {
+interface IIterator<T> {
     hasNext(): boolean;
-    next(): Object;
+    next(): T;
 }

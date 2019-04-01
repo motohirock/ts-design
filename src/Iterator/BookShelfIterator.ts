@@ -1,7 +1,7 @@
 import { Book } from './Book';
 import { BookShelf } from './BookShelf';
 
-export class BookShelfIterator implements IIterator {
+export class BookShelfIterator implements IIterator<Book> {
     private bookShelf: BookShelf;
     private index: number = 0;
 
