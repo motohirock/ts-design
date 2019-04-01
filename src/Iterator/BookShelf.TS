@@ -17,7 +17,7 @@ export class BookShelf implements IAggregate {
         return this.books[index];
     }
 
-    getIterator(): IIterator{
+    getIterator(): IIterator<Book> {
         return new BookShelfIterator(this);
     }
 }

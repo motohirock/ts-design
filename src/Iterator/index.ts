@@ -1,6 +1,5 @@
 import { Book } from './Book';
 import { BookShelf } from './BookShelf';
-import { BookShelfIterator } from './BookShelfIterator'
 
 var bookShelf: BookShelf = new BookShelf;
 bookShelf.appendBook(new Book("こころ"));
