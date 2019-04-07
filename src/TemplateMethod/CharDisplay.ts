@@ -9,11 +9,11 @@ export class CharDisplay extends AbstractDisplay {
     }
 
     public open(): void {
-        throw new Error("Method not implemented.");
+        console.log("<<");
     } public print(): void {
-        throw new Error("Method not implemented.");
+        console.log(this.string);
     }
     public close(): void {
-        throw new Error("Method not implemented.");
+        console.log(">>");
     }
 }
