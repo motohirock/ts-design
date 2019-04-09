@@ -13,9 +13,9 @@ export abstract class AbstractDisplay {
         this.open();
 
         for (let index = 0; index < this.loopCount; index++) {
-            print();
+            this.print();
         }
-        close();
+        this.close();
     }
 
 }
