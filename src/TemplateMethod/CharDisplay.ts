@@ -8,12 +8,13 @@ export class CharDisplay extends AbstractDisplay {
         this.string = string;
     }
 
-    public open(): void {
-        console.log("<<");
-    } public print(): void {
-        console.log(this.string);
+    protected open(): void {
+        process.stdout.write("<<");
     }
-    public close(): void {
-        console.log(">>");
+    protected print(): void {
+        process.stdout.write(this.string);
+    }
+    protected close(): void {
+        process.stdout.write(">>\n");
     }
 }

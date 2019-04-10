@@ -10,13 +10,21 @@ export class StringDisplay extends AbstractDisplay {
         this.width = string.length;
     }
 
-    public open(): void {
-        throw new Error("Method not implemented.");
+    protected open(): void {
+        this.printLine()
     }
-    public print(): void {
-        throw new Error("Method not implemented.");
+    protected print(): void {
+        process.stdout.write("|" + this.string + "|\n");
     }
-    public close(): void {
-        throw new Error("Method not implemented.");
+    protected close(): void {
+        this.printLine()
+    }
+
+    private printLine() {
+        process.stdout.write("+");
+        for (let index = 0; index < this.width; index++) {
+            process.stdout.write("-");
+        }
+        process.stdout.write("+\n");
     }
 }

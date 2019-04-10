@@ -5,9 +5,9 @@ export abstract class AbstractDisplay {
     constructor() {
     }
 
-    public abstract open(): void;
-    public abstract print(): void;
-    public abstract close(): void;
+    protected abstract open(): void;
+    protected abstract print(): void;
+    protected abstract close(): void;
 
     public display(): void {
         this.open();
