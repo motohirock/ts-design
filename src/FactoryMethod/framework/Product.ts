@@ -2,5 +2,5 @@ export abstract class Product {
     constructor() {
     }
 
-    public abstract use: void;
+    public abstract use(): void;
 }
