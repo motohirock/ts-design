@@ -2,9 +2,12 @@ import { Product } from './Product';
 
 export abstract class Factory {
     create(owner: string): Product {
-        return this.createP();
+        var product: Product = this.createProduct(owner);
+        this.registerProduct(product);
+        return product;
     }
 
-    protected abstract createP(): Product;
+    protected abstract createProduct(owner: string): Product;
+    protected abstract registerProduct(product: Product): void;
 }
 
