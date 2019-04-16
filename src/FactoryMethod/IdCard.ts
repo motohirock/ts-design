@@ -6,9 +6,9 @@ export class IdCard extends Product {
     constructor(owner: string) {
         super();
         this.owner = owner;
-        console.log(owner + 'のカードを作ります。');
+        console.log(owner + 'さんのカードを作ります。');
     }
     public use(): void {
-        console.log(this.owner + 'のカードを使います。');
+        console.log(this.owner + 'さんのカードを使います。');
     }
 }
