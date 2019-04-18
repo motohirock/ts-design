@@ -1,6 +1,5 @@
-import { Singleton } from "./Singleton";
-
 console.log('start');
+import { Singleton } from "./Singleton";
 
 var singleton1: Singleton = Singleton.getInstance();
 var singleton2: Singleton = Singleton.getInstance();

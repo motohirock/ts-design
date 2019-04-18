@@ -1,10 +1,13 @@
 export class Singleton {
-    private static singleton: Singleton = new Singleton();
-
+    private static singleton: Singleton;
     private constructor() {
-        console.log('インスタンスを生成');
     }
-    public static getInstance() {
+
+    public static getInstance(): Singleton {
+        if (!this.singleton) {
+            this.singleton = new Singleton();
+            console.log('add Singleton Instance.')
+        }
         return this.singleton;
     }
 }
