@@ -1,7 +1,9 @@
 export class TicketMaker {
-    private ticketNumber: number = 1000;
+    private static ticketNumber: number = 1000;
+    private constructor() {
+    }
 
-    public getNextTicketNumber(): number {
+    public static getNextTicketNumber(): number {
         return this.ticketNumber++;
     }
 }
