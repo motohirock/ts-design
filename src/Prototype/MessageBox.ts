@@ -1,8 +1,14 @@
+import clone from 'clone';
+
 export class MessageBox implements IProduct {
+    private char: string;
+
     use(s: string): void {
-        throw new Error("Method not implemented.");
+        console.log("\"" + s + "\"");
+        console.log(Array(s.length + 3).join(this.char));
     }
+
     createClone(): IProduct {
-        throw new Error("Method not implemented.");
+        return <IProduct>clone(this);
     }
 }
