@@ -8,8 +8,10 @@ export class MessageBox implements IProduct {
     }
 
     use(s: string): void {
-        console.log("\"" + s + "\"");
-        console.log(Array(s.length + 3).join(this.char));
+        var length = s.length;
+        console.log(Array(length + 3).join(this.char));
+        console.log(this.char + s + this.char);
+        console.log(Array(length + 3).join(this.char));
     }
 
     createClone(): IProduct {
