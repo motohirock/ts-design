@@ -1,11 +1,12 @@
 import { Builder } from "./Builder";
+import { StringBuilder } from "../common/StringBuilder"
 
 export class TextBuilder extends Builder {
 
-    private buffer: string;
+    private strBld: StringBuilder = new StringBuilder();
 
     public makeTitle(title: string): void {
-        this.buffer += "==============";
+        throw new Error("Method not implemented.");
     }
 
     public makeString(str: string): void {
