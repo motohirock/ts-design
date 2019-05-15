@@ -6,16 +6,20 @@ export class TextBuilder extends Builder {
     private strBld: StringBuilder = new StringBuilder();
 
     public makeTitle(title: string): void {
-        throw new Error("Method not implemented.");
+        this.strBld.append("======================\n");
+        this.strBld.append("[" + title + "]\n");
+        this.strBld.append("\n");
     }
 
     public makeString(str: string): void {
-        throw new Error("Method not implemented.");
+        this.strBld.append("■" + str + "\n");
+        this.strBld.append("\n");
     }
+
     public makeItems(items: {}): void {
         throw new Error("Method not implemented.");
     }
     public close(): void {
-        throw new Error("Method not implemented.");
+        this.strBld.append("======================\n");
     }
 }
