@@ -22,6 +22,7 @@ export abstract class Page {
         console.log("title:［" + this.title + "］");
         console.log("title:［" + this.author + "］");
         console.log(this.makeHTML());
+        console.log("----出力完了----");
     }
 
     public abstract makeHTML(): string;
