@@ -5,5 +5,4 @@ export abstract class Factory {
 
     public static getFactory(className: string): void {
     }
-
 }
